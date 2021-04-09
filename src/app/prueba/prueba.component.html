@@ -1,0 +1,48 @@
+
+<div class="contenedor">
+    
+    <br> <h3>Ingrese el mes de su nacimiento: </h3>
+   <mat-form-field>
+    <input matInput [(ngModel)]="valor1" type="text" placeholder="Ingrese el mes de su nacimiento: ">
+    </mat-form-field>
+
+    <tr>
+   <td>
+       Número:
+   </td>
+   <td>
+   {{valor1 | meses}}
+   </td>
+   </tr>
+
+   <tr>
+    <td>
+        Posición:
+    </td>
+    <td>
+   {{valor1 | meses:'calendario'}}
+   </td>
+</tr>
+
+<tr>
+    <td>
+        Significado:
+    </td>
+    <td>
+   {{valor1 | meses:'significado'}}
+   </td>
+</tr>
+
+<tr>
+    <td>
+        Ingles:
+    </td>
+    <td>
+   {{valor1 | meses:'ingles'}}
+   </td>
+</tr>
+  
+    
+    
+  </div>
+
